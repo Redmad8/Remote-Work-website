@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <img class="logo" src="images/logo.svg" alt="logo">
+      <img class="menu" src="images/icon-menu.svg" alt="menu-humburger">
+
+    <div class="menu-container">
+      <div class="nav-list-container">
+        <img class="close-menu"src="images/icon-close-menu.svg" alt="closeMenu">
+        <ul class="nav-list">
+          <li>Features <img class="arrow-down-features" src="images/icon-arrow-down.svg"alt="arrow-down">
+                       <img class="arrow-up-features" src="images/icon-arrow-up.svg"alt="arrow-up">
+
+          </li>
+          <div id="features" class="expanded-list-container">
+            <ul class="expanded-list">
+              <li><img src="images/icon-todo.svg" alt="todo-icon">To do list</li>
+              <li><img src="images/icon-calendar.svg" alt="calendar-icon">Calandar</li>
+              <li><img src="images/icon-reminders.svg" alt="remiders-icon">Reminders</li>
+              <li><img src="images/icon-planning.svg" alt="planning-icon">Planning</li>
+            </ul>
+
+          </div>
+          <li>Company <img class="arrow-down-Company" src="images/icon-arrow-down.svg"alt="arrow-down">
+                      <img class="arrow-up-Company" src="images/icon-arrow-up.svg"alt="arrow-up">
+                      <div id="company" class="expanded-list-container">
+                        <ul class="expanded-list">
+                          <li>History</li>
+                          <li>Our team</li>
+                          <li>Blog</li>
+                        </ul>
+                      </div>
+          </li>
+
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+
+
+        <ul class="signup-list">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+  </nav>
+</header>
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="description-container">
+        <h1 class="title">Make remote work</h1>
+        <p class="description">Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+          <a class="learn-more-btn" href="#">Learn more</a>
+          <div class="collab-container">
+            <ul class="collab-list">
+              <li>
+                <img src="images/client-databiz.svg" alt="databiz">
+              </li>
+              <li><img src="images/client-audiophile.svg" alt="audiophile"></li>
+              <li><img src="images/client-meet.svg" alt="client-meet"></li>
+              <li><img src="images/client-maker.svg" alt="client-maker"></li>
+            </ul>
+          </div>
+      </div>
+
+        <img class="illustration" src="images/image-hero-mobile.png" alt="hero-image">
+        <img class="illustration-desktop" src="images/image-hero-desktop.png" alt="hero-image">
+
+    </div>
+
+  </section>
+  <section class="collab">
+
+
+  </section>
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+<script src="index.js"></script>
+</body>
+</html>
