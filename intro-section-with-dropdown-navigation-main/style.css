@@ -1,0 +1,295 @@
+body{
+  margin:0;
+   background: rgba(1,1,1,0);
+   font-family: Epilogue;
+   Color:hsl(0, 0%, 98%);
+}
+/*Navigation Bar*/
+.navbar{
+
+padding: 20px 10px;
+
+}
+.nav-container{
+display: flex;
+justify-content: space-between;
+}
+.menu-container{
+  display: none;
+}
+
+.nav-list-container{
+background: rgba(255, 255, 255, 0.6);
+z-index: 1;
+background-color: white;
+position: absolute;
+display: flex;
+flex-direction: column;
+right: 0;
+width: 60%;
+top: 0;
+height: 100%;
+}
+.close-menu{
+  width: 10%;
+  position:absolute;
+  right: 10px;
+  top: 10px;
+}
+.nav-list{
+  padding:20px 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+.nav-list li{
+  margin: 10px;
+  color:hsl(0, 0%, 41%);
+}
+.expanded-list{
+  list-style: none;
+  padding: 0;
+}
+.expanded-list li img {
+  padding:0 10px;
+}
+#features{
+  display: none;
+}
+#company{
+  display: none;
+}
+.arrow-up-Company{
+  display: none;
+}
+.arrow-up-features{
+  display: none;
+}
+.signup-list{
+  padding:20px 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup-list li {
+  margin: 0 0  25px 0;
+
+}
+.signup-list a {
+  text-decoration: none;
+  color:black;
+  color:hsl(0, 0%, 41%);
+  padding:10px 40px;
+}
+.signup-list li :hover {
+  border : 2px solid hsl(0, 0%, 8%);
+border-radius: 20px;
+}
+
+/*Hero Section*/
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 20px 0;
+
+}
+.description-container{
+  text-align: center;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.title{
+  color:hsl(0, 0%, 8%);
+  font-weight: 700;
+  font-size: 32px;
+}
+.description{
+  color:hsl(0, 0%, 41%);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  margin: 30px auto;
+
+
+}
+.illustration-desktop{
+  display:none;
+}
+.learn-more-btn{
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  padding: 15px 25px ;
+  text-decoration: none;
+  border-radius: 15px;
+  margin: 20px  auto;
+}
+/*collaboration section*/
+.collab-container{
+  text-align: left;
+  margin: 20px 20px 0 0;
+}
+.collab-list{
+  list-style: none;
+  display: flex ;
+  justify-content: space-between;
+  padding: 0;
+margin: 0;
+}
+.collab-list li{
+  display: inline;
+  margin-top: 10;
+}
+
+
+@media(min-width:1000px){
+body{
+  z-index: 0;
+}
+  .navbar{
+    display: block;
+  
+    margin: 0px 10px 0 30px;
+    padding:0 0 10px 0;
+
+  }
+  .nav-container{
+    display: inline;
+  }
+  .nav-container .logo{
+    position: relative;
+    top:20px;
+    padding: 10px 0;
+  }
+  .menu-container{
+    display: inline;
+  }
+  .nav-list-container{
+  background-color: : rgba(255, 255, 255, 0.6);
+  z-index: 1;
+  position: static;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 0 30px;
+  width: 90%;
+  }
+  .close-menu{
+  display: none;
+  }
+  .menu{
+    display: none;
+  }
+  .nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: static;
+    margin: 0;
+    align-items: center;
+    padding: 0 10px 15px 10px;
+  }
+  .nav-list li{
+  margin: 10px 20px 40px 20px;
+  }
+  #features{
+    z-index: 1;
+    position: absolute;
+    top:35px;
+    left:100px;
+    padding:0 2px 8px 2px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow:0px 10px 30px 10px hsl(0deg 0% 85%);
+
+  }
+  #company{
+    z-index: 1;
+    position: absolute;
+    top:35px;
+    left:350px;
+    padding:12px 4px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow:0px 10px 30px 10px hsl(0deg 0% 85%);
+
+  }
+  .expanded-list {
+    padding:10px 6px;
+  }
+  .expanded-list li{
+    margin:10px 0;
+  }
+  .signup-list{
+    display: flex;
+    flex-direction: row;
+
+    position: static;
+
+    padding: 0 10px 15px 10px;
+    margin-bottom:25px;
+  }
+
+  /*Hero Desktop */
+  .hero-section{
+    padding:0 80px;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding:0;
+margin:0 0 100px 0;
+
+
+  }
+  .illustration{
+    display:none;
+  }
+  .illustration-desktop{
+  display: inline-block;
+  width: auto;
+  height: 480px;
+  }
+  .description-container{
+  text-align: left;
+  padding:0 120px 0 80px;
+  justify-content: flex-start;
+  margin: 0;
+
+  }
+  .title{
+    color:hsl(0, 0%, 8%);
+    font-weight: 700;
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding:80px 40px 0 0 ;
+
+  }
+  .description{
+    color:hsl(0, 0%, 41%);
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    margin: 0 ;
+    padding-right: 50px;
+
+
+  }
+  .learn-more-btn{
+    margin: 15px auto 20px 0;
+  }
+}
